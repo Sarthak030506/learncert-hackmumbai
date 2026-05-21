@@ -1,0 +1,21 @@
+{
+  "name": "learncert-contract",
+  "version": "1.0.0",
+  "description": "LearnCert — Gasless NFT Certificate System on Base Sepolia",
+  "main": "scripts/ugf.js",
+  "scripts": {
+    "test": "node scripts/test.js",
+    "deploy": "hardhat run scripts/deploy.js --network baseSepolia",
+    "compile": "hardhat compile"
+  },
+  "dependencies": {
+    "ethers": "^6.0.0",
+    "@tychilabs/ugf-testnet-js": "latest",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "hardhat": "^2.22.0"
+  }
+}

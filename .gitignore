@@ -1,0 +1,20 @@
+# Secrets — never commit
+.env
+
+# Dependencies
+node_modules/
+
+# Hardhat build output
+artifacts/
+cache/
+
+# Remix IDE local cache
+.deps/
+.states/
+
+# Claude internal
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
