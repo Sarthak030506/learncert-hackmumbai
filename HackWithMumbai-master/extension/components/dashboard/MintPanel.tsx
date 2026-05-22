@@ -37,7 +37,7 @@ export const MintPanel: React.FC<MintPanelProps> = ({
     }
 
     const url =
-      `https://credifyweb.vercel.app/claim` +
+      `https://credifyweb-pi.vercel.app/claim` +
       `?wallet=${encodeURIComponent(walletAddress)}` +
       `&score=${score ?? 0}` +
       `&course=${encodeURIComponent(videoTitle || "Credify Certificate")}` +

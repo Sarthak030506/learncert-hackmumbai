@@ -1,5 +1,6 @@
 import React from "react";
 import { GlassCard } from "../ui/GlassCard";
+import { MIN_SCORE_FOR_CERT, MIN_COMPLETION_FOR_CERT } from "~lib/constants";
 
 interface EligibilityPanelProps {
   score: number;
@@ -7,8 +8,8 @@ interface EligibilityPanelProps {
   isEligible: boolean;
 }
 
-const SCORE_THRESHOLD = 70;
-const COMPLETION_THRESHOLD = 80;
+const SCORE_THRESHOLD = MIN_SCORE_FOR_CERT;
+const COMPLETION_THRESHOLD = MIN_COMPLETION_FOR_CERT * 100;
 
 export const EligibilityPanel: React.FC<EligibilityPanelProps> = ({
   score,

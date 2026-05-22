@@ -7,7 +7,7 @@ import { MintPanel } from "./components/dashboard/MintPanel"
 import "~style.css"
 
 import { Storage } from "@plasmohq/storage"
-import { STORAGE_KEYS } from "~lib/constants"
+import { STORAGE_KEYS, MIN_SCORE_FOR_CERT, MIN_COMPLETION_FOR_CERT } from "~lib/constants"
 import type { Certificate } from "~types/certificate"
 import type { WatchSession } from "~types/session"
 import { calculateScoreBreakdown, computeUniqueCompletionPct } from "~lib/scoring"
@@ -193,7 +193,7 @@ function IndexPopup() {
     return () => clearInterval(interval)
   }, [])
 
-  const isEligible = currentScore >= 35 && completionPct >= 80
+  const isEligible = currentScore >= MIN_SCORE_FOR_CERT && completionPct >= MIN_COMPLETION_FOR_CERT * 100
 
   // Compute sessionHash deterministically from session data
   const sessionHash = sessionData

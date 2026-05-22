@@ -32,10 +32,10 @@ export const MAX_STORED_SESSIONS = 100
 // ── Scoring thresholds ──
 
 /** Minimum completion percentage (0-1) to be eligible for a certificate */
-export const MIN_COMPLETION_FOR_CERT = 0.7
+export const MIN_COMPLETION_FOR_CERT = 0.5
 
 /** Minimum credibility score (0-100) to be eligible for a certificate */
-export const MIN_SCORE_FOR_CERT = 50
+export const MIN_SCORE_FOR_CERT = 30
 
 /** Speed above which a penalty is applied */
 export const SPEED_PENALTY_THRESHOLD = 1.5
